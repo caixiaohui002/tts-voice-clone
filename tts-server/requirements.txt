@@ -1,0 +1,26 @@
+# FastAPI 框架
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# 音频处理
+pydub==0.25.1
+librosa==0.10.2.post1
+soundfile==0.12.1
+numpy==1.26.4
+
+# 工具库
+aiofiles==24.1.0
+python-dotenv==1.0.1
+
+# ========================================
+# TTS 引擎（根据你的情况选择安装）
+# ========================================
+
+# 方式一：使用已有的 IndexTTS 2.5（推荐）
+# 如果你已经下载了 IndexTTS 2.5，不需要安装额外的 TTS 库
+# 只需要设置环境变量 INDEX_TTS_PATH 指向你的 IndexTTS 目录
+
+# 方式二：使用 Coqui TTS (XTTS v2) 作为备选
+# 如果没有 IndexTTS，可以安装这个（首次运行会下载约 2GB 模型）
+# TTS==0.22.0
